@@ -6,10 +6,13 @@ import MyComponent from "./component/MyComponent";
 import React from "react";
 
 class App extends React.Component {
-  handleClick(event) {
-    // console.log("Long nguyen");
-    console.log(event);
-  }
+  handleClick = (event) => {
+    console.log("Long nguyen");
+    console.log("name: ", this.state.name);
+    this.setState({
+      name: "Long nguyen",
+    });
+  };
   handleOnMoverOver(event) {
     console.log(event);
   }
